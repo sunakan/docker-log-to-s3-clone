@@ -1,0 +1,10 @@
+---
+
+version: "3.7"
+
+services:
+  app:
+    image: debian:buster-slim
+    command: ["bash", "/app.sh"]
+    volumes:
+      - ./app.sh:/app.sh
